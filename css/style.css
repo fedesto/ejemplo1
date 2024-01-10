@@ -1,98 +1,188 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-header{
-    position: sticky;
-    top: 0;
-    
+
+header {
+  position: sticky;
+  top: 0;
+
 }
+
 .logo {
-    background-color: rgba(0, 166, 255, 0.615);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 5rem;
+  background-color: rgba(0, 166, 255, 0.615);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
 }
+
 #logo__tipo {
-    width: 30vh;
-    height: 30vh;
+  width: 30vh;
+  height: 30vh;
 }
-nav{
-    background-color: rgba(240, 255, 255, 0.172);
-    margin: .1rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
+
+nav {
+  background-color: rgba(240, 255, 255, 0.172);
+  margin: .1rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
 }
-ul, li{
-    list-style: none;
-    display: inline;
-    margin-top: 1rem;
-    padding: .9rem;
-    font-size: 1.2rem;
- 
+
+ul,
+li {
+  list-style: none;
+  display: inline;
+  margin-top: 1rem;
+  padding: .9rem;
+  font-size: 1.2rem;
+
 }
-li:hover{
-color: red;
+
+li:hover {
+  color: red;
 }
+
 .banner {
-    width: 100%;
-    height: 75vh;
-    background-image: url('/public/img/slider_somos_segar_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-transform: capitalize;
-  }
-  .banner__titulo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    font-size: 2.9rem;
-    color: #000000;
-    font-family: 'Edu QLD Beginner', cursive;  }
-  .segar{
-    color: rgb(0, 0, 0);
-    font-family: 'Dela Gothic One', sans-serif;
-    font-size: 2.6rem;
-  }
-  span{
-    color: red;
-    font-family: 'Dela Gothic One', sans-serif;
-    font-size: 2.6rem;
-  }
-  
-  .banner__logo {
-    margin: 0 auto;
-    display: block;
-  }
-  .historia, h2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    padding: 2rem;
-    background-color: azure;
-    font-family: 'PT Sans Narrow', sans-serif;
-  }
-  .txt{
-    width: 80%;
-  }
-  .ceo, p{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  width: 100%;
+  height: 75vh;
+  background-image: url('/public/img/slider_somos_segar_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: capitalize;
+}
+
+.banner__titulo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-size: 2.9rem;
+  color: #000000;
+  font-family: 'Edu QLD Beginner', cursive;
+}
+
+.segar {
+  color: rgb(0, 0, 0);
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 2.6rem;
+}
+
+span {
+  color: red;
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 2.6rem;
+}
+
+.banner__logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.historia,
+h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 2rem;
+  background-color: azure;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.txt {
+  width: 80%;
+}
+
+.ceo,
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
-  }
+}
+
+h3 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 1rem;
+  color: #000000a5;
+}
+
+.timeline {
+  position: relative;
+  width: 2rem;
+  /* Cambiado a ancho vertical */
+  height: 100vh;
+  background-color: #ccc;
+  transition: width 0.3s ease;
+  margin-left: 10rem;
+}
+
+.event {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #3498db;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.event-date {
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.event-content {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  padding: 0.625rem;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+.event-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.3125rem;
+}
+
+.event:hover {
+  transform: scale(1.2);
+}
+
+.event:hover .event-content {
+  display: block;
+}
+
+.timeline.active {
+  width: 10rem;
+}
