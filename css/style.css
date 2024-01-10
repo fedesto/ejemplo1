@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-  background-color: rgba(0, 166, 255, 0.615);
+  background-color: rgba(5, 141, 214, 0.845);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,4 +172,19 @@ h3 {
   border-radius: 1rem;
   margin-left: .9rem;
   text-align: center;
+}
+#background-segar{
+  background-image: url(/public/img/Segar-Galería-Bienes-04.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+}
+#galeria{
+
 }
