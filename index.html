@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segar Seguridad</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -16,9 +16,16 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#"></a>producto</li>
-                <li><a href="#"></a>nuestros clientes</li>
-                <li><a href="#"></a>ingresar</li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nuestros clientes</a></li>
+                <li class="has-submenu">
+                    <a href="#">Ingresar</a>
+                    <div class="submenu">
+                        <a href="#">Empresa</a>
+                        <a href="#">Operador</a>
+                        <a href="#">Supervision</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -48,20 +55,19 @@
                 </div>
             </div>
             <h3>nuestra trayectoria a lo largo de los años</h3>
-            <!--nueva linea-->
             <div id="section">
                 <div id="timeline">
-                    <div class="evento">
+                    <div class="evento__izquierda">
                         <span id="evento-datos">1991</span>
                         <div class="evento-contenido">
                             <img src="/public/img/Old-Logo-Segar-540px-300x169-removebg-preview.png" alt=""
                                 class="pictur1">
                             <p>Creamos Segar Seguridad
-                                En 1991 Alberto Arçapalo y Marcelo Segarra emprenden un proyecto ambicioso, el de
+                                En 1991 Alberto Arcapalo y Marcelo Segarra emprenden un proyecto ambicioso, el de
                                 convertirse en una empresa de seguridad CONFIABLE y EFICIENTE.</p>
                         </div>
                     </div>
-                    <div class="evento">
+                    <div class="evento__derecha">
                         <span id="evento-datos">1994</span>
                         <div class="evento-contenido">
                             <img src="/public/img/supermarket.jpg" alt="" class="pictur1">
@@ -69,21 +75,21 @@
                         </div>
                     </div>
 
-                    <div class="evento">
+                    <div class="evento__izquierda">
                         <span id="evento-datos">1998</span>
                         <div class="evento-contenido">
                             <img src="/public/img/Aeriopuerto-540.jpg" alt="" class="pictur1">
                             <p>Primer servicio en zona Aeroportuaria</p>
                         </div>
                     </div>
-                    <div class="evento">
+                    <div class="evento__derecha">
                         <span id="evento-datos">2000</span>
                         <div class="evento-contenido">
                             <img src="/public/img/ISO-9002-300x300-removebg-preview.png" alt="" class="pictur1">
                             <p>Certificación SGS ISO9002</p>
                         </div>
                     </div>
-                    <div class="evento">
+                    <div class="evento__izquierda">
                         <span id="evento-datos">2005</span>
                         <div class="evento-contenido">
                             <img src="/public/img/Logo-Control-24-540px-300x169-removebg-preview.png" alt=""
@@ -91,7 +97,7 @@
                             <p>Creamos Control 24, incursionando en la Seguridad Electrónica</p>
                         </div>
                     </div>
-                    <div class="evento">
+                    <div class="evento__derecha">
                         <span id="evento-datos">2008</span>
                         <div class="evento-contenido">
                             <img src="/public/img/barrio-privado.jpg" alt="" class="pictur1">
@@ -103,14 +109,14 @@
                                 co-propietarios del lugar.</p>
                         </div>
                     </div>
-                    <div class="evento">
+                    <div class="evento__izquierda">
                         <span id="evento-datos">2019</span>
                         <div class="evento-contenido">
                             <img src="/public/img/Gol-Power-540px.jpg" alt="" class="pictur1">
                             <p>Modernizamos nuestra identidad de marca y uniformes.</p>
                         </div>
                     </div>
-                    <div class="evento">
+                    <div class="evento__derecha">
                         <span id="evento-datos">2019</span>
                         <div class="evento-contenido">
                             <img src="/public/img/SIRE-img-TOTEM-540x405.jpg" alt="" class="pictur1">
@@ -169,9 +175,54 @@
                     fugiat. Dolorum beatae delectus voluptatem ipsum!</div>
             </article>
             <div class="banner-2">
-          <img src="/public/img/Frase-02-1 (1).svg" alt="">
+                <img src="/public/img/Frase-02-1 (1).svg" alt="">
             </div>
+            <h3>que hacemos</h3>
+            <div class="servicios__ofrecidos">
+                <div id="servicios-oferta">
+                    <div class="servicio">
+                        <img src="/public/img/images.jpg" alt="" id="pictur-oferta">
+                    </div>
+                    <div class="texto-oferta">
+                        <h3 id="puestos">vigilancia</h3>
+                        <p class="descripcion">Seguridad de Bienes Patrimoniales</p>
+                    </div>
+                </div>
+                <div id="servicios-oferta">
+                    <div class="servicio">
+                        <img src="/public/img/Segar-Galería-Electrónica-02.jpg" alt="" id="pictur-oferta">
+                    </div>
+                    <div class="texto-oferta">
+                        <h3 id="puestos">monitoreo</h3>
+                        <p class="descripcion">Seguridad Electrónica las 24hs</p>
+                    </div>
 
+                </div>
+                <div id="servicios-oferta">
+                    <div class="servicio">
+                        <img src="/public/img/Vip-1-845x321.jpg" alt="" id="pictur-oferta">
+                    </div>
+                    <div class="texto-oferta">
+                        <h3 id="puestos">custodia</h3>
+                        <p class="descripcion">Custodia Personal y de Mercadería en Tránsito</p>
+                    </div>
+
+                </div>
+                <div id="servicios-oferta">
+                    <div class="servicio">
+                        <img src="/public/img/Segar-bg_image_SIRE.jpg" alt="" id="pictur-oferta">
+                    </div>
+                    <div class="texto-oferta">
+                        <h3 id="puestos">SIRE</h3>
+                        <p class="descripcion">Seguridad Integral Remota para Edificios</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="guardia">
+                <img src="/public/img/Frase-07.svg" alt="">
+            </div>
+            lorem*100
         </section>
     </main>
     <script src="/js/script.js"></script>

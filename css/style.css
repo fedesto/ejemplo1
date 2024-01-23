@@ -9,9 +9,7 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-# banner__titulo{
 
-}
 header {
   position: sticky;
   top: 0;
@@ -44,27 +42,51 @@ header {
 }
 
 nav {
-  background-color: rgba(240, 255, 255, 0.172);
-  margin: .1rem;
-  height: 2rem;
+  background-color: rgb(5, 141, 214);
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-transform: capitalize;
 }
 
-ul,
 li {
-  list-style: none;
-  display: inline;
-  margin-top: 1rem;
-  padding: .9rem;
-  font-size: 1.2rem;
-
+  margin-right: 3rem;
 }
 
-li:hover {
-  color: red;
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+.submenu {
+  margin-top: .1rem;
+  display: none;
+  position: absolute;
+  background-color: rgba(5, 141, 214, 0.553);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
 }
 
 .banner {
@@ -92,6 +114,7 @@ li:hover {
   color: rgb(0, 0, 0);
   font-family: 'Dela Gothic One', sans-serif;
   font-size: 2.6rem;
+  position: relative;
 }
 
 span {
@@ -137,38 +160,42 @@ h3 {
   margin: 5rem;
   color: #000000a5;
 }
-
+#puestos{
+  font-family: 'Anton', sans-serif;
+  margin: 1rem;
+}
 #section {
-  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#timeline {
-  position: static;                                                           
-}
 
-.evento {
+.evento__izquierda, .evento__derecha {
+
   background-color: #000000;
   width: .1rem;
-  margin: 1.5rem;
-
+  margin: 1rem;
 }
-
+.evento__izquierda{
+  display: flex;
+}
+.evento__derecha{
+  display: flex;
+  flex-direction: row-reverse;
+}
 #evento-datos {
   color: black;
-  margin-left: 1rem;
+  margin: 1rem;
 }
-
 .pictur1 {
   width: 45vh;
 }
-
 .evento-contenido {
   background: rgba(196, 215, 255, 0.336);
   box-shadow: 0 2rem 6rem 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1rem);
+ 
   border: .9rem solid rgba(255, 255, 255, 0.18);
   -webkit-backdrop-filter: blur(2rem);
   width: 30rem;
@@ -176,12 +203,10 @@ h3 {
   margin-left: .9rem;
   text-align: center;
 }
-
 #background-segar {
   background-image: url(/public/img/Segar-Galería-Bienes-04.jpg);
   background-size: cover;
   background-attachment: fixed;
-
   top: 0;
   display: flex;
   justify-content: center;
@@ -203,15 +228,16 @@ h4 {
   grid-gap: 20px;
   max-width: 1200px;
   margin: 20px auto;
+
 }
 
 #servicios>div {
-  background-color: rgba(255, 0, 0, 0.154);
+  background-color: rgba(0, 128, 255, 0.253);
   border: .1rem solid #e0e0e0;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: .5rem;
-  box-shadow: 0 1rem 2rem 0 rgba(0, 17, 255, 0.37);
-  backdrop-filter: blur(1rem);
+  box-shadow: 0 1rem 2rem 0 rgba(42, 195, 255, 0.37);
+
   border: .9rem solid rgba(255, 255, 255, 0.18);
   -webkit-backdrop-filter: blur(2rem);
 
@@ -275,4 +301,28 @@ h4 {
   align-items: center;
   height: 65vh;
   margin-top: 4rem;
+}
+.servicios__ofrecidos{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 2rem;
+}
+#pictur-oferta{
+  width: 40vh;
+  height: 25vh;
+}
+.descripcion{
+  font-size: 1.3rem;
+}
+.guardia{
+  background-image: url(/public/img/b02cf8dce55b66053e3a6cc4b4d044aa.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-top: 1rem;
 }
